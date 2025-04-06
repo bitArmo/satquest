@@ -1,4 +1,4 @@
-<section class="py-16 md:py-24 bg-gray-50">
+<section id="how-it-works" class="py-16 md:py-24 bg-gray-50">
   <div class="container mx-auto px-4 sm:px-6">
     <div class="text-center max-w-3xl mx-auto mb-12">
       <h2 class="text-3xl md:text-4xl font-bold mb-4 text-blue-900">How SatQuest Works</h2>

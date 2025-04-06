@@ -1,3 +1,8 @@
+// src/routes/demo/lucia/login/+page.server.js 
+// For sensitive data that should be rendered on the server (SSR)
+// Contains login and register actions
+// Lucia auth
+
 import { hash, verify } from '@node-rs/argon2';
 import { encodeBase32LowerCase } from '@oslojs/encoding';
 import { fail, redirect } from '@sveltejs/kit';
