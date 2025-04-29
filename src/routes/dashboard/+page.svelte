@@ -1,17 +1,24 @@
-<script>
-    // Simple data without component dependencies
-    let userData = {
-      name: "User",
-      projects: 3,
-      datasets: 12,
-      status: "Active"
-    };
-  </script>
-  
-  <svelte:head>
-    <title>Dashboard | SatQuest</title>
-  </svelte:head>
-  
+<script lang="ts">
+  import DashboardLayout from "$lib/components/dashboard/DashboardLayout.svelte";
+
+  // Simple data without component dependencies
+  let userData = {
+    name: "User",
+    bio: "",
+    github: "",
+    skills: [],
+    joinedDate: new Date().toISOString(),
+    projects: 3,
+    datasets: 12,
+    status: "Active"
+  };
+</script>
+
+<svelte:head>
+  <title>Dashboard | SatQuest</title>
+</svelte:head>
+
+<DashboardLayout>
   <div class="p-4">
     <h1 class="text-2xl font-bold mb-6">Dashboard</h1>
     <p class="mb-4">Welcome to the SatQuest dashboard.</p>
@@ -38,3 +45,4 @@
       <p>Replace this with your actual dashboard content.</p>
     </div>
   </div>
+</DashboardLayout>

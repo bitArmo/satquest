@@ -1,4 +1,3 @@
-<!-- src/lib/components/dashboard/DataTable.svelte -->
 <script>
   export let headers = [];
   export let data = [];

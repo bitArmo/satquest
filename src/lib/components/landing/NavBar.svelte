@@ -1,8 +1,8 @@
-<script>
+<script lang="ts">
   import { onMount } from 'svelte';
   
-  let logoContainer;
-  let svgPaths = [];
+  let logoContainer: HTMLDivElement;
+  let svgPaths: SVGElement[] = [];
   
   // Flag to track if we've processed the SVG
   let svgProcessed = false;
@@ -63,7 +63,7 @@
   });
   
   // Handle cursor interaction
-  function handleMouseMove(event) {
+  function handleMouseMove(event: MouseEvent) {
     if (!svgPaths.length) return;
     
     const containerRect = logoContainer.getBoundingClientRect();

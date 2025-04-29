@@ -1,0 +1,33 @@
+satquest is a platform that connects developers to project managers. people can add projects to the platform, linking their existing github repos to the platform. and then others can filter through the projects and ask for assignment to a specific project. you can find projects within your specific interest like machine learning, or web development, or data analysis, or a specific technology you want to work on, like rust or python programming language. 
+the issuer of the projects can put small incentives in bitcoin that would automatically be sent to the user who completed the task via lightning.
+
+there are several parts to this project:
+ - the interface which is created via svelte in this repo. 
+ - the payment system wich is on a different repo.
+ - the github integration (authentication and project tracking)
+ - the supabase backend
+
+as for the interface, it is a svelte app with tailwindcss and shadcn ui. that is the main repo you should be working on. the landing of the app can route to different parts of the project, such as the /explore, and /dashboard. the /explore page is a page that shows all the projects available on the platform. the /dashboard page is a page that shows all the projects that the user has created.
+
+'/dashboard': 
+ - it shows your on-going assignments (projects)
+ - it shows connecting to your wallet
+ - it shows your collected payments
+ - it shows your created projects
+ - it shows your profile
+ - it shows your settings
+ - it shows your notifications
+ - it shows your activity
+ - it has to be scalable to future features
+
+'/explore':
+ - it shows all the projects available on the platform
+ - it has filters for different fields (bitcoin, crypto, machine learning, web development, data analysis, etc.)
+ - it has filters for different technologies (rust, python, etc.)
+ - it has filters for having/without incentives
+ - it has up vote and down vote system, with a comment system (like reddit)
+ - it has a search bar
+ - it has to be scalable to future features
+
+
+`/src/lib/components/ui/` is for shadcn ui components
