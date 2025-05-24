@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function CallToAction() {
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 text-blue-900">
+    <section id="call-to-action" className="py-16 md:py-24 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 text-blue-900">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           {/* Left column - content */}

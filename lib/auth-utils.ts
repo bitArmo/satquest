@@ -1,6 +1,5 @@
-import { cookies } from 'next/headers';
 import { createClient } from '@supabase/supabase-js';
-import { GitHubTokenResponse, GitHubUser, User, Session } from '@/types/auth';
+import { GitHubTokenResponse, GitHubUser, User } from '@/types/auth';
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
 const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;

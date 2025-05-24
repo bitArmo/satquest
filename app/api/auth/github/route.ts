@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { getGitHubAuthURL, GITHUB_SCOPES } from '@/lib/auth-utils';
+import { getGitHubAuthURL } from '@/lib/auth-utils';
 import { cookies } from 'next/headers';
 import crypto from 'crypto';
 

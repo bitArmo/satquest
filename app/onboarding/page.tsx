@@ -1,21 +1,12 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { useForm } from 'react-hook-form';
-import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
-import { Loader2 } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Complete Your Profile | SatQuest',
   description: 'Complete your SatQuest profile to get started',
 };
 
-const profileSchema = z.object({
-  display_name: z.string().min(2, { message: 'Display name must be at least 2 characters' }),
-  github_username: z.string().min(1, { message: 'GitHub username is required' }),
-  lightning_address: z.string().optional(),
-  bio: z.string().max(160, { message: 'Bio must be 160 characters or less' }).optional(),
-});
 
 export default function OnboardingPage() {
   return (

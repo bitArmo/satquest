@@ -105,8 +105,6 @@ export async function getCurrentUser(): Promise<User | null> {
   };
 }
 
-// Import token-related functions from auth-utils
-import { getGitHubToken } from './auth-utils';
 
 // Delete session (logout)
 export async function deleteSession(): Promise<void> {

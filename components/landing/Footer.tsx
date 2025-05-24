@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { Github, Twitter, MessageCircle } from 'lucide-react';
 
 export default function Footer() {
