@@ -38,5 +38,10 @@
     "typescript": "^5.0.0",
     "zod": "^3.25.28"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "critters": "^0.0.23",
+    "css-loader": "^7.1.2",
+    "postcss-loader": "^8.1.1",
+    "style-loader": "^4.0.0"
+  }
 }
